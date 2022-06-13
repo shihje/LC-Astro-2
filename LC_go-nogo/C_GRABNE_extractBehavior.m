@@ -174,11 +174,11 @@ for i = 1:nROI
             A = R(beh22PH(:,3) == j,:);
             imagesc(A(iSort,:),[-5 15]);
             colormap(ax,gray)
-%             if j == 2
-%                 colormap(ax,gray)
-%             else
-%                 colormap(ax,makeColorMap(cA(:,j)'));
-%             end
+            if j == 2
+                colormap(ax,gray)
+            else
+                colormap(ax,makeColorMap(cA(:,j)'));
+            end
             title(TITLE{j})
             axis off
             setUpPlotCompact
